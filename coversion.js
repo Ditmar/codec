@@ -7,3 +7,15 @@ function codec(msn) {
   }
   return data.toString().replace(/,/g,"");
 }
+
+function convertoBase64(msn) {
+  var data = [];
+  for (var i = 0; i < msn.length; i++) {
+    data.push(msn.charCodeAt(i).toString(16));
+  }
+  //cossas
+
+}
+function decimalToBinary (n) {
+  return n.toString(2);
+}
